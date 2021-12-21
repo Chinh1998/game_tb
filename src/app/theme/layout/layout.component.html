@@ -1,0 +1,64 @@
+<img class="back" src="../../../assets/image/common/san-bong-11-nguoi-min(2).png" />
+<div class="n-section">
+    <header class="n-header" #header>
+        <div class="n-header-left">
+            <div class="n-app-title">
+                <div class="n-title">
+                    <div class="n-text-title">
+                        <div class="n-count">
+                            <span>NAM:</span>
+                            <span>{{app.kickMan}}</span>
+                        </div>
+                        <img (click)="routerQuestion()" src="../../../assets/image/common/logo.png" />
+                        <div class="n-count">
+                            <span>NỮ:</span>
+                            <span>{{app.kickGirl}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="n-header-left">
+            <div class="n-app-title">
+                <div class="n-title">
+                    <div class="n-text-title">
+                        <div class="n-count">
+                            <img src="../../../assets/image/common/ye_card.png" (click)="card(1)" />
+                        </div>
+                        <div class="card-body">
+                            <countdown [config]="{ leftTime: 30 }"></countdown>
+                          </div>
+                        <!-- <img src="../../../assets/image/common/logo.png" /> -->
+                        <div class="n-count">
+                            <img src="../../../assets/image/common/red_card.png" (click)="card(2)"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="n-main">
+        <div class="n-content">
+            <div class="n-container">
+               <img class="n-ball-icon icon1" (click)="goal(1)" src="../../../assets/image/common/football.png" />
+               <img class="n-ball-icon icon" (click)="goal(0)" src="../../../assets/image/common/football.png" />
+               <img class="n-ball {{index == 1 ? 'goal1' : index == 2 ? 'goal2':''}}" src="../../../assets/image/common/football.png" />
+               <img class="n-ball-icon icon2" (click)="goal(2)" src="../../../assets/image/common/football.png" />
+            </div>
+        </div>
+    </main>
+    <div class="n-question">
+        <div class="question">
+           <img src="{{app.question}}"/>
+           <span class="material-icons" (click)="answer()">
+            swipe_down_alt
+            </span>
+           <h3 *ngIf="app.answer && isShow">{{app.answer}}</h3>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>
+<img class="card" *ngIf="showCard && idxCard == 1" src="../../../assets/image/common/ye.png" />
+<img class="card" *ngIf="showCard && idxCard == 2" src="../../../assets/image/common/red.png" />

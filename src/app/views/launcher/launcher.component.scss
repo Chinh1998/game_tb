@@ -1,0 +1,45 @@
+.n-home-page {
+    .nques-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .back {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .n-ques {
+        position: relative;
+        top: 20px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        display: flex;
+
+        .n-ball {
+            max-width: 100px;
+            cursor: pointer;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 36px;
+            left: 44px;
+            color: red;
+            cursor: pointer;
+        }
+        .color {
+            color: saddlebrown;
+        }
+    }
+}
+.ballllll {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    margin: 20px auto;
+    cursor: pointer;
+}

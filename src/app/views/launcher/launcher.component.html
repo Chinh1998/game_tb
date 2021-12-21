@@ -1,0 +1,12 @@
+<div class="n-home-page">
+   <img class="back" src="../../../assets/image/common/—Pngtree—beautiful blue cartoon soccer field_2749691.png" />
+   <div class="nques-list">
+       <div *ngFor="let item of app.list_question; let i=index">
+           <div class="n-ques">
+               <img class="n-ball" (click)="routerAn(i)" src="../../../assets/image/common/football.png"/>
+               <h3 class="{{item.isClick ? 'color':''}}" (click)="routerAn(i)">{{i+1}}</h3>
+           </div>
+       </div>
+   </div>
+   <img class="ballllll" src="../../../assets/image/common/loho.png"  (click)="music()"/>
+</div>

@@ -1,0 +1,217 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px !important;
+    font-weight: 300;
+    color: #10547e;
+    font-family: Raleway !important;
+    overflow: hidden;
+    line-height: 22px;
+    width: 100vw;
+    height: 100vh;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+}
+
+.n-main::-webkit-scrollbar {
+    width: 10px;
+}
+
+.n-main::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: #fafafa;
+    width: 12px;
+}
+
+.n-main::-webkit-scrollbar-thumb {
+    background-color: #003353;
+    border-radius: 5px;
+}
+
+:host {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px !important;
+    font-weight: 300;
+}
+
+.n-form-group {
+    margin-bottom: 15px;
+    align-items: center;
+
+    .n-input {
+        height: 35px;
+        min-width: 270px;
+        outline: none;
+        border-radius: 5px;
+        border: 0.5px solid rgb(255, 255, 255);
+        background: none;
+        padding: .175rem .4rem;
+        flex: 1 1 auto;
+        line-height: 21px;
+        font-weight: 300;
+        font-size: 16px !important;
+        color: #FFFFFF;
+        font-family: Raleway !important;
+        box-sizing: border-box;
+    }
+}
+
+.d-button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.n-btn-search {
+    background-color: #1a1c33;
+    color: #fafafa;
+    min-width: 120px;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
+    margin-right: 15px;
+
+    &:hover {
+        background-color: #fb8521;
+    }
+}
+
+.n-text-jus {
+    text-align: justify;
+}
+
+.v-input-err {
+    border: 0.5px solid rgb(255, 0, 0) !important;
+}
+
+.n-cur-point {
+    cursor: pointer;
+}
+
+.n-font-S40 {
+    font-size: 40px;
+}
+
+.n-font-S25 {
+    font-size: 25px;
+}
+
+.n-font-W500 {
+    font-weight: 500;
+}
+
+.n-text-align__left {
+    text-align: left !important;
+}
+
+.n-form-search {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.n-form-group-search {
+    margin-left: 15px;
+    display: flex;
+
+    .n-label-search {
+        min-width: 80px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.n-regular {
+    .n-content {
+        font-weight: 500;
+    }
+
+    .n-search {
+        border: 1px solid #003353 !important;
+    }
+
+    .n-form-group {
+        .n-input {
+            border: 0.5px solid #003353;
+            color: #003353;
+            font-weight: 500;
+        }
+    }
+}
+
+.v-tbl-cell {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.n-mentions-box {
+    display: flex;
+    .n-w100 {
+        width: 100%;
+    }
+    .n-left {
+        width: 60% !important;
+    }
+
+    .n-0percent {
+        width: 0%;
+        transition-delay: 0s;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(1s, 0, 0, 1);
+    }
+
+    .n-right {
+        width: 40%;
+        transition-delay: 0s;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(1s, 0, 0, 1);
+        .n-image-detail {
+            width: 65%;
+            max-width: 350px;
+        }
+    }
+}
+.n-image-absolute {
+    position: absolute;
+    top: 0px;
+    z-index: 100000000000;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #000000bf;
+    .material-icons {
+        cursor: pointer;
+        color: red;
+        margin-top: 10px;
+    }
+    .n-max-90 {
+        max-width: 90%;
+        max-height: 95vh;
+    }
+}

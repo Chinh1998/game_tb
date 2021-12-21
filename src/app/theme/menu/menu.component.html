@@ -1,0 +1,31 @@
+<div class="n-menu n-darkmode {{menuService.isExpand ? 'n-expand':''}}">
+    <div class="n-slidebar-nav">
+        <div class="n-menu-header">
+            <span class="n-font-S25 n-font-W500" *ngIf="!menuService.isExpand">MENU</span>
+            <span class="material-icons  n-cur-point n-font-S40" *ngIf="!menuService.isExpand"
+                (click)="expand(true)">switch_left</span>
+            <span class="material-icons n-cur-point n-font-S40" *ngIf="menuService.isExpand"
+                (click)="expand(false)">switch_right</span>
+        </div>
+        <div class="n-slide-bar">
+            <div class="n-nav-items" *ngFor="let menu of menuService.navItems; let i= index;">
+                <a class="n-nav-link" routerLink="{{menu.router}}"
+                    [routerLinkActive]="'d-nav-select'" (click)="clickRouter()">
+                    <span class="n-menu-icon material-icons">{{menu.icon}}</span>
+                    <span class="" *ngIf="!menuService.isExpand">{{menu.name}}</span>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="n-slide-minimizer">
+            <span class="n-switch-size-text" *ngIf="showText">
+                {{!menuService.menuMinimizer ? ('menu.ITEM_M_00001' | translate) : ''}}
+            </span>
+            <div
+                class="n-switch-size  {{!menuService.menuMinimizer ? 'v-right-0' : ''}}"
+                (click)="resizeMenu()"
+            >
+                <img src="{{!menuService.menuMinimizer ? '../../../assets/img/icon/switch_left.png' : '../../../assets/img/icon/switch_left_out.png'}}">
+            </div>
+        </div> -->
+    </div>
+</div>
